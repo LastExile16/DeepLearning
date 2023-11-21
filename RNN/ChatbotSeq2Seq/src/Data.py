@@ -89,7 +89,7 @@ def create_word_embedding(emb_dict, word_vocab):
     Creates a weight matrix of the words that are common in the brown vocab and
     the dataset's vocab. Initializes OOV words with a zero vector.
     '''
-    weights_matrix = np.zeros((len(word_vocab), 100))
+    weights_matrix = np.zeros((len(word_vocab), 128))
     words_found = 0
     for i, word in enumerate(word_vocab):
         try:
